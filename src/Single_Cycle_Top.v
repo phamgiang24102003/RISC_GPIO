@@ -7,7 +7,7 @@ module Single_Cycle_Top(clk,rst);
     wire [1:0]ImmSrc;
     wire [2:0]ALUControl_Top;
 
-    PC_Module PC(
+    PC PC(
         .clk(clk),
         .rst(rst),
         .PC(PC_Top),
