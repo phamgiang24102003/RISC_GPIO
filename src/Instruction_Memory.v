@@ -8,7 +8,7 @@ module Instruction_Memory(rst,A,RD);
   
   assign RD = (~rst) ? {32{1'b0}} : mem[A[31:2]];
 
-  parameter MEM_FILE = "C:/Users/phamg/Downloads/RISCV_Single_Cycle_Core-main/src/memfile.hex";
+  parameter MEM_FILE = "memfile.hex";
   initial begin
     $readmemh(MEM_FILE,mem);
   end
