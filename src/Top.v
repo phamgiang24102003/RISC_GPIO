@@ -49,7 +49,7 @@ module Top (
 
     Memory #(
         .MEM_FILE(MEM_FILE),
-        .SIZE(4096)
+        .SIZE(32)
     ) D_mem_unit (
         .clk(clk),
         .mem_addr((mem_addr>>2)),
