@@ -40,7 +40,7 @@ module Top (
 
     Memory #(
         .MEM_FILE(MEM_FILE),
-        .SIZE(32)
+        .SIZE(64)
     ) D_mem_unit (
         .clk(clk),
         .mem_addr((mem_addr>>2)),
